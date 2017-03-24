@@ -1,0 +1,49 @@
+@charset "utf-8";
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"microsoft yahei",Arail,Tabhoma; font-size:16px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+textarea{resize:none;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em{font-weight: normal; font-style: normal;}
+a{text-decoration: none;color: #000;}
+.clear{clear:both;}
+/*通用结束*/
+.box{
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+#cvs{
+	position: absolute;
+	z-index: 1;
+	
+}
+/*.zhuan{
+	animation:zhuan 3s forwards;
+}*/
+.zhen img{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 97px;
+	height: 97px;
+	margin-left: -48px;
+	margin-top: -48px;
+	z-index: 2;
+	cursor: pointer;
+	transform:rotate(-61deg);
+}
+.zhuan{animation:zhuan 3s forwards;}
+.mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 5;
+	background: rgba(0,0,0,0);
+	top: 0;
+	left: 0;
+	display: none;
+}
